@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Match-Match Game</title>
+  <link href="script/normalize.css" rel="stylesheet">
+  <link href="style/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="heading">
+        <h1>Match-match-game</h1>
+        <div class="timer" id="timer">Timer: <span class="counter" id="counter">0</span></div>
+        <button class="reset" id="reset">Reset</button>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="levels">
+        <h2>Please, Choose the difficulty of the game</h2>
+        <div class="options">
+          <figure id="level1">
+            <img src="img/easy.jpg" alt="Easy level">
+            <figcaption>Easy</figcaption>
+          </figure>
+          <figure id="level2">
+            <img src="img/medium.jpg" alt="Medium level">
+            <figcaption>Medium</figcaption>
+          </figure>
+          <figure id="level3">
+            <img src="img/hard.jpg" alt="Hard level">
+            <figcaption>Hard</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <div class="cardsField" id="cardsField"></div>
+
+      <section class="shirts hidden-element" id="field">
+        <h2>Please, Choose the card shirt.</h2>
+        <div class="options">
+          <figure id="shirt1">
+            <img src="img/shirt-green.jpg" alt="Green Shirt">
+            <figcaption>Green Shirt</figcaption>
+          </figure>
+          <figure id="shirt2">
+            <img src="img/shirt-light.jpg" alt="Light Shirt">
+            <figcaption>Light Shirt</figcaption>
+          </figure>
+          <figure id="shirt3">
+            <img src="img/shirt-brown.jpg" alt="Brown Shirt">
+            <figcaption>Brown Shirt</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>https://github.com/TatyanaKahanovich</p>
+    </footer>
+  </div>
+
+  <script src="script/script.js"></script>
+</body>

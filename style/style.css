@@ -1,0 +1,178 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Comic Sans MS Regular", "Arial", sans-serif;
+	margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #35C835;
+  padding: 5px 0;
+  color: white;
+}
+
+h1 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.reset {
+  font-size: 20px;
+  background: #b2fa7c;
+  width: 190px;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+}
+
+.reset:hover {
+  background: #94e25a;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+}
+
+.reset:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.reset:focus {
+  outline: 0;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+.heading, .options {
+  display: flex;
+  justify-content: space-around;
+}
+
+h2 {
+  color: #35C835;
+  text-align: center;
+  padding: 40px 0 15px 0;
+  text-transform: capitalize;
+}
+
+figure {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+figure:hover {
+  opacity: 1;
+}
+
+figcaption {
+  text-align: center;
+  color: #35C835;
+  font-size: 18px;
+}
+
+.timer {
+  position: relative;
+  font-size: 20px;
+  padding: 12px 0;
+}
+
+.counter {
+  position: absolute;
+  top: 0;
+  left: 68px;
+  padding: 12px 0;
+}
+
+.shirt {
+  height: 180px;
+  width: 117px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s;
+}
+
+.cardsField {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 29px 0;
+}
+
+.cardsField p {
+  text-align: center;
+  color: #35C835;
+}
+
+.medium {
+  max-width: 468px;
+  margin: 0 auto;
+}
+
+.hard {
+  max-width: 936px;
+  margin: 0 auto;
+}
+
+.hidden-element {
+  display: none;
+}
+
+.tile {
+  position: relative;
+  cursor: pointer;
+}
+
+.tile.active, .tile.match {
+  cursor: default;
+}
+
+.tile img {
+  height: 180px;
+  width: 117px;
+  display: block;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+}
+
+.tile.active .shirt,
+.tile.match .shirt {
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+}
+
+.tile.active img,
+.tile.match img {
+  transform: rotateY(0deg);
+}
+
+.tile.match img {
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: 10s;
+  transition: opacity 5s, visibility 0s linear 0.3s;
+}
+
+footer {
+  background: #b2fa7c;
+  height: 50px;
+}
+
+footer p {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+}
